@@ -26,6 +26,7 @@ public class WebLayerTest {
     @Autowired
     private MockMvc mockMvc;
 
+    // testing the HomeController 
     @Test
     public void shouldReturnDefaultMessage() throws Exception {
         this.mockMvc.perform(get("/")).andDo(print()).andExpect(status().isOk())
